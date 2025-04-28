@@ -2,15 +2,23 @@
 Turns a rigged model into a cuboid based on existing bones and their closest vertices.
 Optionally increase cuboid count for specific bones for higher detail
 
-![image](https://github.com/user-attachments/assets/f073e3a3-4bfb-49b1-b241-12035f49323f)
-![image](https://github.com/user-attachments/assets/1233ac74-a570-4242-95b0-4279b7bc5af6)
+![image](https://github.com/user-attachments/assets/2180da3c-7879-4dcf-8109-af68d5985154)
+![image](https://github.com/user-attachments/assets/00584f1d-5bf8-4a28-ac88-d667f7b93647)
+
 
 # Setup
-1. Download or Copy Main.py into your scripts in Blender
-2. Adjust Special Bones, Rotation Bones, Symmetrical Bone Pairs
-   -Special Bones create higher cuboid counts
-   -Rotation Bones increase possible rotation values to create the smallest possible cuboid within vertex bounds (UNUSED)
-   -Symmetrical Bones insures bones remain the same size and orientation if they should be symmetrical
-3. Select Armature, including bones and mesh
-4. Run
+1. Edit > preferences > install > select Cubone.zip
+2. A new tab on the right named CUBONE should appear
+3. Select your armature
+4. Generate Bone Cuboids
+
+## Optional Steps
+1. Special Bones: press + and select bones you want higher detail,
+   - LOD means number of generated cuboids
+   - Scale changes ratio of cuboid size to the overal armature
+2. Wide Rotation Bones (UNUSED, but works to increase possible rotation)
+3. Symmetrical Bone Pairs: press + and add bones that should be symmetrical
+   -Astericks(*) makes it so bones with _R and _L or .R and .L become symmetrical. View Image 2
+   -Pattern Settings (Dont Use)
+
 
