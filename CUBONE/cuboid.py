@@ -12,7 +12,7 @@ print("""
 ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░▌      ▐░░▌▐░░░░░░░░░░░▌
  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
                                                                               
-version 1.1 - 
+version 1.1.4 - 
 Team Yume:PianoPsychopath
                                                                               
 """
@@ -1161,6 +1161,8 @@ def find_connected_vertices(mesh, start_vertex_idx, max_distance):
         distance += 1
     
     return list(connected)
+
+
 if __name__ == "__main__":
     cubes = generate_bone_boxes_from_selection()
     process_symmetrical_bones(cubes)
